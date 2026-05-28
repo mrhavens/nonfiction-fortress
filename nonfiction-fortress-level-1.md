@@ -30,43 +30,39 @@ We employ a truth-first methodology governed by Recursive Coherence Theory. Spec
 
 ## 2. The Non-Fiction Fortress Framework
 
-### 2.1 Core Sovereign Nodes
+### 2.1 Core Sovereign Nodes (Epistemic Auditor Crew)
 
-**The Epistemic Navigator (Researcher)**
-- Role: Information extraction and grounding
-- Responsibilities: Source discovery, raw fact harvesting, ontological data mining
-- Output: The Epistemic Dossier
+The execution of these methodologies is structurally handled by a specialized multi-agent crew, built natively in AutoGen:
 
-**The Pattern Synthesizer (Analyst)**
-- Role: Resonance synthesis and abstraction
-- Responsibilities: Fractal pattern identification, ontological argument construction, deep insight extraction
-- Output: The Coherence Framework
+**The Epistemic Auditor**
+- Role: Philosophical soundness and logical verification
+- Responsibilities: Evaluating factual accuracy, identifying logical fallacies, and ensuring ontological consistency.
+- Output: Rigorous critique of the core thesis and arguments.
 
-**The Ontological Weaver (The Architect / Writer)**
-- Role: Prose manifestation and structural design
-- Responsibilities: Translating pure insight into engaging narrative, lexical precision, overarching structural architecture
-- Output: The Resonant Manuscript Draft
+**The Structural Analyst**
+- Role: Information architecture and flow
+- Responsibilities: Evaluating non-fiction structures (e.g., Diátaxis), structural coherence, and clarity of progression.
+- Output: Structural critique and architectural adjustments.
 
-**The Persona Resonance Node (Character Lead / Voice Guide)**
-- Role: Calibration of the authorial Soulprint
-- Responsibilities: Voice consistency, emotional resonance, maintaining the specific author persona and tone
-- Output: The Voice Calibration Matrix
+**The Fact Checker**
+- Role: Truth verification and hallucination hunting
+- Responsibilities: Ruthlessly hunting down unsourced claims, speculative fluff, and unnecessary anthropomorphism.
+- Output: Strict factual compliance reports.
 
-**The Epistemic Auditor (Fact-Checker)**
-- Role: Truth verification and adversarial auditing
-- Responsibilities: Citation validation, claim grounding, adversarial accuracy audit
-- Output: The Epistemic Verification Log
+**The Non-Fiction Writer**
+- Role: Prose manifestation
+- Responsibilities: Translating the thesis and evidence into engaging narrative, guided by the auditing crew.
+- Output: The Resonant Manuscript Draft.
 
-**The Coherence Verifier (Editor)**
-- Role: Systemic quality assurance
-- Responsibilities: Structural resonance, lexical clarity, style phase-locking
-- Output: The Coherence Assessment
+### 2.2 The Bifurcated Epistemic Pipeline
 
-### 2.2 Phase-Locked Workflow
+The Opus Orchestrator enforces epistemic purity by explicitly separating fiction generation (The Mythological Graph) from non-fiction synthesis (The Epistemic Graph).
 
+The non-fiction execution pipeline flows strictly through the following Phase-Locked nodes via LangGraph:
 ```
-RESONANCE TUNING → EPISTEMIC GATHERING → PATTERN SYNTHESIS → ONTOLOGICAL WEAVING → ADVERSARIAL AUDITING → COHERENCE REVISION → PUBLICATION MANIFESTATION
+THESIS FORMULATION → EVIDENCE GATHERING → STRUCTURAL OUTLINE → DRAFT CHAPTER → EPISTEMIC AUDIT
 ```
+Each drafted chapter loops through the Epistemic Auditor Crew until it achieves a verified resonance score, at which point the process moves to the next structural component.
 
 ## 3. Epistemic Gathering Methodology
 

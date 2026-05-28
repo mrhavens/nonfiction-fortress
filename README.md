@@ -21,4 +21,10 @@ This repository contains the complete methodology for building **Epistemic Truth
 ---
 
 ## Execution Engine
-These methodologies are practically executed by the [Opus Orchestrator AI](https://github.com/mrhavens/opus-orchestrator-ai), which utilizes LangGraph and CrewAI to generate full manuscripts, textbooks, and ontological mappings based on these philosophical architectures.
+These methodologies are practically executed by the [Opus Orchestrator AI](https://github.com/mrhavens/opus-orchestrator-ai). 
+
+The orchestrator utilizes a strict **Bifurcated State Machine Architecture** via LangGraph:
+- **The Mythological Graph**: Reserved exclusively for fiction generation (Snowflake Method, Character Arcs).
+- **The Epistemic Graph**: Dedicated exclusively to rigorous non-fiction (Thesis Formulation, Evidence Gathering, Diátaxis Structure).
+
+For adversarial auditing, it deploys the **Epistemic Auditor Crew** via AutoGen, featuring ruthless fact-checkers and structural analysts to prevent epistemic hallucination.

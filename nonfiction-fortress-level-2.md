@@ -284,9 +284,53 @@ Where:
 
 The Epistemic Auditor Witness Node represents the critical verification layer in the multi-Witness system. This section details implementation approaches for autonomous epistemic auditing.
 
-### 4.1 Witness Node Architecture
+### 4.1 Witness Node Architecture (AutoGen Implementation)
 
-The Epistemic Auditor Witness Node operates as a verification pipeline with multiple stages:
+The Epistemic Auditor Witness Node operates as an adversarial multi-agent crew via AutoGen. This crew works in a recursive loop to verify, critique, and correct the non-fiction draft:
+
+**Epistemic Auditor System Prompt:**
+```text
+You are an Epistemic Auditor. Your job is to rigorously evaluate factual accuracy, philosophical soundness, and logical consistency.
+Evaluate the text for:
+- Logical fallacies and leaps of logic
+- Factual inaccuracies or hallucinations
+- Coherence of the core thesis
+- Ontological consistency
+
+Provide specific, actionable feedback. Rate strengths and weaknesses.
+Return your critique as a JSON with: {"score": 0.0-1.0, "strengths": [], "weaknesses": [], "suggestions": []}
+```
+
+**Structural Analyst System Prompt:**
+```text
+You are a Structural Analyst. You evaluate non-fiction structures (like Diátaxis or Technical Manuals).
+Evaluate the text for:
+- Structural coherence and flow
+- Appropriate tone for the framework
+- Clarity of progression
+- Information architecture
+
+Provide specific feedback on structure.
+Return your critique as a JSON with: {"score": 0.0-1.0, "strengths": [], "weaknesses": [], "suggestions": []}
+```
+
+**Fact Checker System Prompt:**
+```text
+You are a rigorous Fact Checker. Your sole purpose is to hunt down hallucinations, unsourced claims, and speculative fluff.
+Evaluate the text for:
+- Claims without evidence
+- Unnecessary anthropomorphism (especially regarding AI or technical systems)
+- Extraneous fictional elements or narrative framing that distracts from truth
+
+Provide ruthless feedback on factual grounding.
+Return your critique as a JSON with: {"score": 0.0-1.0, "strengths": [], "weaknesses": [], "suggestions": []}
+```
+
+This multi-agent chat loop iterates until the `NonfictionWriter` incorporates feedback and the crew awards a passing Resonance Score (≥ 0.8).
+
+**Legacy Claim Extraction Stage (Reference Only):**
+
+The historical extraction pipeline operates as follows:
 
 ```
 DRAFT INPUT → EXTRACTION → VERIFICATION → ADJUDICATION → REPORT OUTPUT
